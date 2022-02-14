@@ -31,4 +31,4 @@ jobs:
           context: .
           file: ./Dockerfile
           push: true
-          tags: ${{secrets.DOCKER_HUB_USERNAME}}/code_test1:latest
+          tags: ${{secrets.DOCKER_HUB_USERNAME}}/code_test1:latest, ${{secrets.DOCKER_HUB_USERNAME}}/code_test1:${{github.run_number}}
